@@ -1,0 +1,65 @@
+#portfolio-grid {
+	width: 100%;
+	margin: 72px 0 0 0;
+	padding: 0;
+}
+#portfolio-grid .feature {
+	width: 25%;
+	height: 210px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	z-index:5000;
+	margin: 0;
+	padding: 0;
+}
+#portfolio-grid .feature h3 {
+	text-align: right;
+	margin: 0;
+	padding: 10px;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: $defaultFont, sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+}
+#portfolio-grid .feature.pink {
+	background-color: $pink;
+	h3 {
+		color: darken($pink, $featureGridTextDarken);
+	}
+}
+#portfolio-grid .feature.yellow {
+	background-color: $yellow;
+	h3 {
+		color: darken($yellow, $featureGridTextDarken);
+	}
+}
+#portfolio-grid .feature.blue {
+	background-color: $blue;
+	h3 {
+		color: darken($blue, $featureGridTextDarken);
+	}
+}
+#portfolio-grid .feature.purple {
+	background-color: $purple;
+	h3 {
+		color: darken($purple, $featureGridTextDarken);
+	}
+}
+#portfolio-grid .feature.orange {
+	background-color: $orange;
+	h3 {
+		color: darken($orange, $featureGridTextDarken);
+	}
+}
+#portfolio-grid .feature.green {
+	background-color: $green;
+	h3 {
+		color: darken($green , $featureGridTextDarken);
+	}
+}
