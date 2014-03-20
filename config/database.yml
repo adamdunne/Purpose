@@ -4,7 +4,7 @@ development:
   encoding: unicode
   database: purpose_development
   username: purpose_app
-  password: purpose_app
+  password: wpm*zy23
   pool: 5
   timeout: 5000
 
@@ -16,7 +16,7 @@ test:
   encoding: unicode
   database: purpose_test
   username: purpose_app
-  password: purpose_app
+  password: wpm*zy23
   pool: 5
   timeout: 5000
 
@@ -24,7 +24,7 @@ production:
   adapter: postgresql
   encoding: unicode
   username: purpose_app
-  password: purpose_app
+  password: wpm*zy23
   database: purpose_production
   pool: 5
   timeout: 5000
