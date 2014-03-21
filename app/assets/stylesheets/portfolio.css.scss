@@ -55,84 +55,84 @@ $claimsUXGrey: #ccc;
 }
 
 .portfolio-masthead.badbeat {
-	background-image: url(/assets/badbeat/logo.png), url(/assets/badbeat/replayer.png);
+	background-image: image-url("badbeat/logo.png"), image-url("badbeat/replayer.png");
 	background-position: 40px 110px, 100% 86px;
 	background-repeat: no-repeat;
 	background-color: $black;
 }
 
 .portfolio-masthead.diggers {
-	background-image: url(/assets/diggers/logo.png), url(/assets/diggers/truck.png);
+	background-image: image-url("diggers/logo.png"), image-url("diggers/truck.png");
 	background-position: 40px 110px, 90% 96px;
 	background-repeat: no-repeat;
 	background-color: $diggersBlue;	
 }
 
 .portfolio-masthead.balancedliving {
-	background-image: url(/assets/balancedliving/logo.png);
+	background-image: image-url("balancedliving/logo.png");
 	background-position: 50% 320px;
 	background-repeat: no-repeat;
 	background-color: $balancedLivingRed;	
 }
 
 .portfolio-masthead.thekitchen {
-	background-image: url(/assets/theKitchen/logo.png);
+	background-image: image-url("theKitchen/logo.png");
 	background-position: 50% 290px;
 	background-repeat: no-repeat;
 	background-color: $theKitchenClay;	
 }
 
 .portfolio-masthead.lfc {
-	background-image: url(/assets/lfc/logo.png);
+	background-image: image-url("lfc/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
 	background-color: $lfcRed;	
 }
 
 .portfolio-masthead.pauldunnelandscaping {
-	background-image: url(/assets/pauldunnelandscaping/logo.png), url(/assets/pauldunnelandscaping/hedge.png);
+	background-image: image-url("pauldunnelandscaping/logo.png"), image-url("pauldunnelandscaping/hedge.png");
 	background-position: 50% 180px, 0 495px;
 	background-repeat: no-repeat, repeat-x;
 	background-color: $paulDunneLandscapingGreen;	
 }
 
 .portfolio-masthead.snaptaxi {
-	background-image: url(/assets/snaptaxi/logo.png);
+	background-image: image-url("snaptaxi/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
 	background-color: $snapTaxiBlue;	
 }
 
 .portfolio-masthead.systemssolutions {
-	background-image: url(/assets/systemssolutions/logo.png);
+	background-image: image-url("systemssolutions/logo.png");
 	background-position: 50% 270px;
 	background-repeat: no-repeat;
 	background-color: $systemsSolutionsGrey;	
 }
 
 .portfolio-masthead.nitrosell {
-	background-image: url(/assets/nitrosell/shadow.png), url(/assets/nitrosell/banner.png);
+	background-image: image-url("nitrosell/shadow.png"), image-url("nitrosell/banner.png");
 	background-position: 0 100%, 50% 58px;
 	background-repeat: repeat-x, no-repeat;
 	background-color: $nitrosellOrange;	
 }
 
 .portfolio-masthead.inosys {
-	background-image: url(/assets/lfc/logo.png);
+	background-image: image-url("lfc/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
 	background-color: $inosysWhite;	
 }
 
 .portfolio-masthead.ease {
-	background-image: url(/assets/ease/logo.png);
+	background-image: image-url("ease/logo.png");
 	background-position: 50% 260px;
 	background-repeat: no-repeat;
 	background-color: $easeBlue;	
 }
 
 .portfolio-masthead.claimsux {
-	background-image: url(/assets/lfc/logo.png);
+	background-image: image-url("lfc/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
 	background-color: $claimsUXGrey;	
@@ -153,64 +153,64 @@ $claimsUXGrey: #ccc;
 	@include window-shadow;
 }
 .mygame-browser {
-    background: url(/assets/badbeat/mygame_screen.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("badbeat/mygame_screen.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
 }
 
 .replay-browser {
-    background: url(/assets/badbeat/replayer_screen.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("badbeat/replayer_screen.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
 }
 
 .diggers-browser {
-    background: url(/assets/diggers/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/diggers/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
 }
 
 .healthbalance-browser {
-    background: url(/assets/balancedliving/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/balancedliving/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
 }
 
 .thekitchen-browser {
-    background: url(/assets/thekitchen/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/thekitchen/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 1200px;
 }
 
 .lfc-browser {
-    background: url(/assets/lfc/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/lfc/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 1078px;
 }
 
 .pauldunnelandscaping-browser {
-    background: url(/assets/pauldunnelandscaping/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/pauldunnelandscaping/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 1078px;
 }
 
 .systemssolutions-browser {
-    background: url(/assets/systemssolutions/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/systemssolutions/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 777px;
 }
 
 .systemssolutions-catalogue-browser {
-    background: url(/assets/systemssolutions/catalogue_website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/systemssolutions/catalogue_website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 777px;
 }
 
 .nitrosell-browser {
-    background: url(/assets/nitrosell/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/nitrosell/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 870px;
 }
 
 .pauldunnelandscaping-browser {
-    background: url(/assets/pauldunnelandscaping/website.png) 1px 77px no-repeat,
-    			url(/assets/browser_top.png) top center no-repeat;
+    background: image-url("/pauldunnelandscaping/website.png") 1px 77px no-repeat,
+    			image-url("browser_top.png") top center no-repeat;
     height: 870px;
 }
 
