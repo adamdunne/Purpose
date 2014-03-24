@@ -306,6 +306,19 @@ nav#main-nav li a.selected {
     color: #fff;
 }
 
+.portfolio-grid .feature .excerpt {
+    background-color: rgba(0,0,0,0.85);
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-grid .feature:hover .excerpt,
+.portfolio-grid .feature:focus .excerpt {
+    display: block;  
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
