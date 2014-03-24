@@ -21,6 +21,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
 /*
@@ -112,7 +113,24 @@ $orange: #ff7354;
 $green: #d8e4cb;
 $black: #000;
 
-$featureGridTextDarken: 40%;
+$diggersBlue: #1b5e9b;
+$balancedLivingRed: #a50004;
+$theKitchenClay: #31363e;
+$lfcRed: #d00027;
+$paulDunneLandscapingGreen: #94c840;
+$snapTaxiBlue: #043148;
+$systemsSolutionsGrey: #687787;
+$nitrosellOrange: #ce6917;
+$inosysWhite: #ccc;
+$easeBlue: #a7bed6;
+$claimsUXGrey: #ccc;
+
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body {
 	height: 100%;
@@ -193,24 +211,25 @@ nav#main-nav li a.selected {
 	fill: #ccc;
 }
 
-#portfolio-grid {
+.portfolio-grid {
     width: 100%;
+    @include border-box;
     margin: 72px 0 0 0;
     padding: 0;
 }
-#portfolio-grid .feature {
+.portfolio-grid .feature {
     width: 25%;
     height: 210px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    @include border-box;
     float: left;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     z-index:5000;
     margin: 0;
     padding: 0;
 }
-#portfolio-grid .feature h3 {
+.portfolio-grid .feature h3 {
     text-align: right;
     margin: 0;
     padding: 10px;
@@ -222,45 +241,70 @@ nav#main-nav li a.selected {
     font-weight: 600;
     font-size: 1em;
 }
-#portfolio-grid .feature.pink {
-    background-color: $pink;
-    h3 {
-        color: darken($pink, $featureGridTextDarken);
-    }
-}
-#portfolio-grid .feature.yellow {
-    background-color: $yellow;
-    h3 {
-        color: darken($yellow, $featureGridTextDarken);
-    }
-}
-#portfolio-grid .feature.blue {
-    background-color: $blue;
-    h3 {
-        color: darken($blue, $featureGridTextDarken);
-    }
-}
-#portfolio-grid .feature.purple {
-    background-color: $purple;
-    h3 {
-        color: darken($purple, $featureGridTextDarken);
-    }
-}
-#portfolio-grid .feature.orange {
-    background-color: $orange;
-    h3 {
-        color: darken($orange, $featureGridTextDarken);
-    }
-}
-#portfolio-grid .feature.green {
-    background-color: $green;
-    h3 {
-        color: darken($green , $featureGridTextDarken);
-    }
+.portfolio-grid .feature.badbeat {
+    background-color: #000;
+    background-image: image-url("badbeat/grid_logo.png");
+    color: #fff;
 }
 
+.portfolio-grid .feature.balancedliving {
+    background-color: $balancedLivingRed;
+    background-image: image-url("balancedliving/logo.png");
+    color: #fff;
+}
 
+.portfolio-grid .feature.systemssolutions {
+    background-color: $systemsSolutionsGrey;
+    color: #fff;
+}
 
+.portfolio-grid .feature.thekitchen {
+    background-color: $theKitchenClay;
+    background-image: image-url("thekitchen/grid_logo.png");
+    color: #fff;
+}
+
+.portfolio-grid .feature.diggers {
+    background-color: $diggersBlue;
+    background-image: image-url("diggers/grid_logo.png");
+    color: #fff;
+}
+
+.portfolio-grid .feature.ease {
+    background-color: $easeBlue;
+    color: #fff;
+}
+
+.portfolio-grid .feature.inosys {
+    background-color: $inosysWhite;
+    color: #fff;
+}
+
+.portfolio-grid .feature.claimsux {
+    background-color: $claimsUXGrey;
+    color: #fff;
+}
+
+.portfolio-grid .feature.pauldunnelandscaping {
+    background-color: $paulDunneLandscapingGreen;
+    color: #fff;
+}
+
+.portfolio-grid .feature.lfc {
+    background-color: $lfcRed;
+    background-image: image-url("lfc/grid_logo.png");
+    color: #fff;
+}
+
+.portfolio-grid .feature.nitrosell {
+    background-color: $nitrosellOrange;
+    color: #fff;
+}
+
+.portfolio-grid .feature.snaptaxi {
+    background-color: $snapTaxiBlue;
+    color: #fff;
+}
 
 /* ==========================================================================
    Helper classes

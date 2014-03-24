@@ -2,22 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$diggersBlue: #1b5e9b;
-$balancedLivingRed: #a50004;
-$theKitchenClay: #31363e;
-$lfcRed: #d00027;
-$paulDunneLandscapingGreen: #94c840;
-$snapTaxiBlue: #043148;
-$systemsSolutionsGrey: #687787;
-$nitrosellOrange: #ce6917;
-$inosysWhite: #ccc;
-$easeBlue: #a7bed6;
-$claimsUXGrey: #ccc;
+
 
 @mixin window-shadow {
 	-webkit-box-shadow: 0px 1px 11px 0px rgba(50, 50, 50, 0.6);
 	-moz-box-shadow:    0px 1px 11px 0px rgba(50, 50, 50, 0.6);
 	box-shadow:         0px 1px 11px 0px rgba(50, 50, 50, 0.6);	
+}
+
+.portfolio-grid.fullscreen .feature {
+	height: 33.3%;
 }
 
 .badbeat-mobile {
@@ -39,6 +33,7 @@ $claimsUXGrey: #ccc;
 .portfolio-feature {
 	background-color: #f2f2f2;
 }
+
 .portfolio-overview h1 {
 	font-family: $defaultFont, sans-serif;
 	font-weight: 400;
@@ -215,7 +210,5 @@ $claimsUXGrey: #ccc;
 }
 
 .maxwidth {
-	max-width: 70%;
-	margin-left: auto;
-	margin-right: auto;
+
 }

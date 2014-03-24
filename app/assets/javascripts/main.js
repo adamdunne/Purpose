@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 	
+	$(function(){
+	    var $window = $(window).on('resize', function(){
+	       var height = $(window).height() - 70;
+	       $('.portfolio-grid.fullscreen').height(height);
+	    }).trigger('resize'); //on page load
+	});
+
 	var nav = $('#page-header');
 	var OffsetTop = nav.height() + ($(window).height() / 4);
 	var nav_class = 'scroll-nav'; 
