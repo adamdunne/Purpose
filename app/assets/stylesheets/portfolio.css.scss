@@ -92,8 +92,9 @@
 }
 
 .portfolio-masthead.snaptaxi {
-	background-image: image-url("snaptaxi/logo.png");
-	background-position: 50% 210px;
+	background-image: image-url("snaptaxi/logo.svg");
+	background-size: 20%;
+	background-position: 50% 170px;
 	background-repeat: no-repeat;
 	background-color: $snapTaxiBlue;	
 }
