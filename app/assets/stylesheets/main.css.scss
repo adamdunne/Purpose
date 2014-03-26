@@ -20,6 +20,7 @@ textarea {
 
 html {
     font-size: 1em;
+    -webkit-font-smoothing: antialiased;
     line-height: 1.4;
     height: 100%;
 }
@@ -223,27 +224,26 @@ nav#main-nav li a.selected {
     @include border-box;
     float: left;
     position: relative;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     z-index:5000;
     margin: 0;
     padding: 0;
+
 }
 .portfolio-grid .feature h3 {
-    text-align: right;
     margin: 0;
-    padding: 10px;
-    float: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    padding: 20px;
     font-family: $defaultFont, sans-serif;
+    text-transform: uppercase;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 .portfolio-grid .feature.badbeat {
     background-color: #000;
-    background-image: image-url("badbeat/grid_logo.png");
+    background-image: image-url("badbeat/logo.png");
+    background-size: 70%;
     color: #fff;
 }
 
@@ -255,70 +255,101 @@ nav#main-nav li a.selected {
 
 .portfolio-grid .feature.systemssolutions {
     background-color: $systemsSolutionsGrey;
+    background-image: image-url("systemssolutions/logo.png");
+    background-size: 20%;
     color: #fff;
 }
 
 .portfolio-grid .feature.thekitchen {
     background-color: $theKitchenClay;
-    background-image: image-url("thekitchen/grid_logo.png");
+    background-image: image-url("thekitchen/logo.png");
+    background-size: 70%;
     color: #fff;
 }
 
 .portfolio-grid .feature.diggers {
     background-color: $diggersBlue;
-    background-image: image-url("diggers/grid_logo.png");
+    background-image: image-url("diggers/logo.png");
+    background-size: 70%;
     color: #fff;
 }
 
 .portfolio-grid .feature.ease {
     background-color: $easeBlue;
+    background-image: image-url("ease/logo.png");
+    background-size: 50%;
     color: #fff;
 }
 
 .portfolio-grid .feature.inosys {
     background-color: $inosysWhite;
+    background-image: image-url("inisys/logo.png");
+    background-size: 60%;
     color: #fff;
 }
 
 .portfolio-grid .feature.claimsux {
     background-color: $claimsUXGrey;
+    background-image: image-url("claimsux/grid_logo.png");
+    background-size: 150%;
     color: #fff;
 }
 
 .portfolio-grid .feature.pauldunnelandscaping {
     background-color: $paulDunneLandscapingGreen;
+    background-image: image-url("pauldunnelandscaping/logo.png");
+    background-size: 70%;
     color: #fff;
 }
 
 .portfolio-grid .feature.lfc {
     background-color: $lfcRed;
-    background-image: image-url("lfc/grid_logo.png");
+    background-image: image-url("lfc/logo.png");
+    background-size: 30%;
     color: #fff;
 }
 
 .portfolio-grid .feature.nitrosell {
     background-color: $nitrosellOrange;
+    background-image: image-url("nitrosell/logo.png");
+    background-size: 50%;
     color: #fff;
 }
 
 .portfolio-grid .feature.snaptaxi {
     background-color: $snapTaxiBlue;
+    background-image: image-url("snaptaxi/logo.svg");
+    background-size: 30%;
     color: #fff;
 }
 
 .portfolio-grid .feature .excerpt {
-    background-color: rgba(0,0,0,0.85);
-    display: none;
-    position: relative;
+    transition: bottom 0.5s, background-color 0.5s;
+    background: none;
+    background-repeat: no-repeat;
+    position: absolute;
     height: 100%;
     width: 100%;
+    bottom: -100%;
 }
 
 .portfolio-grid .feature:hover .excerpt,
 .portfolio-grid .feature:focus .excerpt {
-    display: block;  
+    display: block;
+    background-color: rgba(0,0,0,0.9);
+    background-image: image-url("arrow.svg");
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: 95% 90%;
+    bottom: 0;  
+    transition: bottom 0.5s, background-color 0.5s;
 }
 
+.portfolio-grid .feature .excerpt p {
+    padding: 0 20px;
+    margin: 0;
+    font-weight: 400;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
