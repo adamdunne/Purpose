@@ -1,4 +1,5 @@
 Purpose::Application.routes.draw do
+  get "about/index"
   get "portfolio/index"
   get "home/index"
 
@@ -16,6 +17,8 @@ Purpose::Application.routes.draw do
   get "portfolio/snaptaxi", to: "portfolio#snaptaxi"
   get "portfolio/systemssolutions", to: "portfolio#systemssolutions"
   get "portfolio/nitrosell", to: "portfolio#nitrosell"
+
+  get "about", to: "about#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

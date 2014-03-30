@@ -17,15 +17,23 @@
 .badbeat-mobile {
 	background-image: image-url("badbeat/poker_assistant.png");
 	background-repeat: no-repeat;
+	background-size: contain;
 	float:right;
 	width: 57%;
 	height: 921px;
 }
 
-.portfolio-masthead {
+.portfolio-masthead,
+.about-masthead {
 	height: 600px;
 }
-
+.about-masthead {
+	background-image: image-url("profile_pic.png");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right 50px;
+}
 .portfolio-overview,
 .portfolio-feature {
 	padding: 40px;

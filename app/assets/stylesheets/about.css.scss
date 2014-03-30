@@ -1,0 +1,11 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about-masthead .intro {
+	color: #fff;
+	padding: 20% 400px 0 20px;
+	font-family: $defaultFont, sans-serif;
+	font-weight: 200;
+	font-size: 2em;
+}
