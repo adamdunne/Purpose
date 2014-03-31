@@ -143,7 +143,7 @@ body {
 
 header {
 	width: 100%;
-	padding: $defaultPadding $defaultPadding 0 $defaultPadding;
+	padding: 15px $defaultPadding 0 $defaultPadding;
 	position: fixed;
 	background-color: #fff;
 	top: 0;
@@ -180,6 +180,17 @@ header h1 a {
     }
 }
 
+.nav-button {
+    width: 24px;
+    height: 20px;
+    background-image: image-url("menu.svg");
+    margin: 14px 45px 23px 0;
+    background-size: contain;
+    display: none;
+    float: right;
+    background-repeat: no-repeat;
+}
+
 nav#main-nav {
 	float:right;
 	vertical-align: bottom;
@@ -200,7 +211,7 @@ nav#main-nav li a {
 	text-decoration: none;
 	color: #000;
 	display: inline-block;
-	padding: 5px 0 $defaultPadding 0;
+	padding: 12px 0 21px 0;
 	height: 24px;
 	border-bottom: solid 5px transparent;
 }
@@ -459,8 +470,54 @@ nav#main-nav li a.selected {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 890px) {
     /* Style adjustments for viewports that meet the condition */
+    .portfolio-grid .feature {
+    width: 50%;
+   } 
+
+    .nav-button {
+        display: inline-block;
+    }
+    nav#main-nav {
+        float: left;
+        width: 100%;
+        display: none;
+    }
+    nav#main-nav ul.main-menu {
+        position: absolute;
+        background-color: #fff;
+        float: left;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: $topBannerHeight;
+    }
+    nav#main-nav ul.social-menu {
+        display: none;
+    }
+    nav#main-nav ul.social-menu li {
+ 
+    } 
+    nav#main-nav ul.main-menu li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav#main-nav ul li a {
+        width: 100%;
+        font-size: 1.8em;
+    }
+    nav#main-nav ul li a:hover,
+    nav#main-nav ul li a.selected {
+        border-color: transparent;
+    }
+    nav#main-nav ul li a.selected {
+        font-weight: 600;
+    }
 }
 
 @media print,
