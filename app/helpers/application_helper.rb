@@ -8,3 +8,16 @@ module ApplicationHelper
 		end
 	end
 end
+
+def page_title(separator = " – ")
+  [content_for(:title), 'Adam Dunne'].compact.join(separator)
+end
+
+def page_heading(title)
+  content_for(:title){ title }
+  content_tag(:h1, title)
+end
+
+def set_page_heading(title)
+  content_for(:title){ title }
+end
