@@ -4,6 +4,7 @@
   <title>Adam Dunne</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= render "shared/google_analytics" %>
 </head>
 <body>
         <!--[if lt IE 7]>
@@ -11,6 +12,5 @@
         <![endif]-->
 <%= yield %>
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-<%= render "shared/google_analytics" %>
 </body>
 </html>
