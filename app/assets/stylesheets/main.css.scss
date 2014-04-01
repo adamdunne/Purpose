@@ -475,7 +475,7 @@ nav#main-nav li a.selected {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (max-width: 56em) {
+@media only screen and (max-width: 720px) {
     /* Style adjustments for viewports that meet the condition */
     .portfolio-grid .feature {
         width: 50%;
