@@ -22,6 +22,12 @@ $( document ).ready(function() {
 	        }
 	    }
 	});
+
+	var mobile_nav_button = $('#mobile-nav');
+		mobile_nav_button.click(function(){$('#main-nav').toggle(0, function() {
+			mobile_nav_button.toggleClass('close');
+		});
+	});
 });
 
 
