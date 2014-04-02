@@ -233,6 +233,8 @@ nav#main-nav li a.selected {
 
 .portfolio-grid {
     width: 100%;
+    position: relative;
+    z-index: 4000;
     @include border-box;
     margin: 72px 0 0 0;
     padding: 0;
@@ -475,11 +477,76 @@ nav#main-nav li a.selected {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (max-width: 56em) {
     /* Style adjustments for viewports that meet the condition */
     .portfolio-grid .feature {
         width: 50%;
-    } 
+    }
+
+    .portfolio-masthead,
+    .about-masthead {
+        height: 300px  !important;
+    }
+
+.portfolio-masthead.badbeat {
+    background-position: 20px 110px, 130% 102% !important;
+    background-size: 50%, 70% !important;
+}
+
+.portfolio-masthead.diggers {
+    background-position: 40px 110px, 93% 106px !important;
+    background-size: 50%, 40% !important;
+}
+
+.portfolio-masthead.balancedliving {
+    background-position: 50% 165px !important;
+}
+
+.portfolio-masthead.thekitchen {
+    background-position: 50% 150px !important;
+    background-size: 300px !important;
+}
+
+.portfolio-masthead.lfc {
+    background-position: 50% 100px !important;
+    background-size: 130px !important;
+}
+
+.portfolio-masthead.pauldunnelandscaping {
+    background-position: 50% 95px, 0 240px !important;  
+    background-size: 360px, 100% !important;
+}
+
+.portfolio-masthead.snaptaxi {
+    background-size: 30% !important;
+    background-position: 50% 105px !important;   
+}
+
+.portfolio-masthead.systemssolutions {
+    background-position: 50% 150px !important;  
+    background-size: 90px !important;  
+}
+
+.portfolio-masthead.nitrosell {
+    background-position: 0 200px, 50% bottom !important;
+    background-size: contain, contain !important;
+}
+
+.portfolio-masthead.inosys {
+    background-position: 50% 160px !important;
+    background-size: 70% !important;
+}
+
+.portfolio-masthead.ease {
+    background-position: 50% 150px !important;  
+    background-size: 200px !important;
+}
+
+.portfolio-masthead.claimsux {;
+    background-position: 50% 210px; 
+}
+
     header h1 {
         font-weight: 400;
     }
@@ -488,9 +555,11 @@ nav#main-nav li a.selected {
     }
     nav#main-nav {
         width: 100%;
+        position: relative;
         height: 1000px;
         background-color: #fff;
         display: none;
+        z-index: 10000;
     }
     nav#main-nav ul.main-menu {
         position: relative;
@@ -535,6 +604,12 @@ nav#main-nav li a.selected {
         font-weight: 600;
         color: $kleinBlue;
     }
+
+    .about-masthead .intro {
+    padding-right: 55% !important;
+    font-weight: 400 !important;
+    font-size: 1em !important;
+}
 }
 
 @media print,
