@@ -145,20 +145,19 @@
 	width: 40%;
 }
 .browser {
-    width: 1026px;
-    height: 871px;
+    max-width: 1026px;
+    width: 100%;
     margin: 0 auto;
     display: block;
+    background: image-url("browser_top.png") top center no-repeat;
+    background-size: contain;
 	@include window-shadow;
 }
-.mygame-browser {
-    background: image-url("badbeat/mygame_screen.png") 1px 77px no-repeat,
-    			image-url("browser_top.png") top center no-repeat;
-}
 
-.replay-browser {
-    background: image-url("badbeat/replayer_screen.png") 1px 77px no-repeat,
-    			image-url("browser_top.png") top center no-repeat;
+.browser-screenshot {
+    margin: 7.5% 0 0 1px;
+    width: 100%;
+    max-width: 1024px;
 }
 
 .diggers-browser {
