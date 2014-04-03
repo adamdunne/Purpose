@@ -23,8 +23,7 @@
 	height: 921px;
 }
 
-.portfolio-masthead,
-.about-masthead {
+.masthead {
 	height: 600px;
 }
 
@@ -51,71 +50,71 @@
 	font-size: 1.4rem;
 }
 
-.portfolio-masthead.badbeat {
+.masthead.badbeat {
 	background-image: image-url("badbeat/logo.png"), image-url("badbeat/replayer.png");
 	background-position: 40px 110px, 100% 86px;
 	background-repeat: no-repeat;
 	background-color: $black;
 }
 
-.portfolio-masthead.diggers {
+.masthead.diggers {
 	background-image: image-url("diggers/logo.png"), image-url("diggers/truck.png");
 	background-position: 40px 110px, 90% 96px;
 	background-repeat: no-repeat;
 	background-color: $diggersBlue;	
 }
 
-.portfolio-masthead.balancedliving {
+.masthead.balancedliving {
 	background-image: image-url("balancedliving/logo.png");
 	background-position: 50% 320px;
 	background-repeat: no-repeat;
 	background-color: $balancedLivingRed;	
 }
 
-.portfolio-masthead.thekitchen {
+.masthead.thekitchen {
 	background-image: image-url("thekitchen/logo.png");
 	background-position: 50% 290px;
 	background-repeat: no-repeat;
 	background-color: $theKitchenClay;	
 }
 
-.portfolio-masthead.lfc {
+.masthead.lfc {
 	background-image: image-url("lfc/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
 	background-color: $lfcRed;	
 }
 
-.portfolio-masthead.pauldunnelandscaping {
+.masthead.pauldunnelandscaping {
 	background-image: image-url("pauldunnelandscaping/logo.png"), image-url("pauldunnelandscaping/hedge.png");
 	background-position: 50% 180px, 0 495px;
 	background-repeat: no-repeat, repeat-x;
 	background-color: $paulDunneLandscapingGreen;	
 }
 
-.portfolio-masthead.snaptaxi {
+.masthead.snaptaxi {
 	background-image: image-url("snaptaxi/logo.svg");
 	background-size: 20%;
-	background-position: 50% 170px;
+	background-position: 50% 200px;
 	background-repeat: no-repeat;
 	background-color: $snapTaxiBlue;	
 }
 
-.portfolio-masthead.systemssolutions {
+.masthead.systemssolutions {
 	background-image: image-url("systemssolutions/logo.png");
 	background-position: 50% 270px;
 	background-repeat: no-repeat;
 	background-color: $systemsSolutionsGrey;	
 }
 
-.portfolio-masthead.nitrosell {
+.masthead.nitrosell {
 	background-image: image-url("nitrosell/shadow.png"), image-url("nitrosell/banner.png");
 	background-position: 0 100%, 50% 58px;
 	background-repeat: repeat-x, no-repeat;
 	background-color: $nitrosellOrange;	
 }
 
-.portfolio-masthead.inosys {
+.masthead.inosys {
 	background-image: image-url("inisys/logo.png");
 	background-position: 50% 270px;
 	background-size: 30%;
@@ -123,14 +122,14 @@
 	background-color: $inosysWhite;	
 }
 
-.portfolio-masthead.ease {
+.masthead.ease {
 	background-image: image-url("ease/logo.png");
 	background-position: 50% 260px;
 	background-repeat: no-repeat;
 	background-color: $easeBlue;	
 }
 
-.portfolio-masthead.claimsux {
+.masthead.claimsux {
 	background-image: image-url("lfc/logo.png");
 	background-position: 50% 210px;
 	background-repeat: no-repeat;
@@ -155,7 +154,7 @@
 }
 
 .browser-screenshot {
-    margin: 7.5% 0 0 1px;
+    margin: 7.5% 0 0 0;
     width: 100%;
     max-width: 1024px;
 }

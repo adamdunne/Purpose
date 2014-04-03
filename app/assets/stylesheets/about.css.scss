@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.about-masthead {
+.masthead.about {
 	background-image: image-url("profile_pic.png");
 	background-color: #000;
 	background-repeat: no-repeat;
@@ -10,9 +10,9 @@
 	background-position: right 50px;
 }
 
-.about-masthead .intro {
+.masthead.about .intro {
 	color: #fff;
-	padding: 20% 400px 0 20px;
+	padding: 20% 420px 0 20px;
 	font-family: $defaultFont, sans-serif;
 	font-weight: 200;
 	font-size: 2em;

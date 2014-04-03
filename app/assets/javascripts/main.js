@@ -1,9 +1,14 @@
 $( document ).ready(function() {
 	
-	$(document).on('page:fetch',   function() { NProgress.start(); });
-	$(document).on('page:change',  function() { NProgress.done(); });
+	$(document).on('page:fetch',   function() { 
+		NProgress.start(); 
+	});
+	$(document).on('page:change',  function() { 
+		NProgress.done(); 
+		document.getElementById('primary-content').className += 'animated fadeIn';
+	});
 	$(document).on('page:restore', function() { NProgress.remove(); });
-	
+
 	$(function(){
 	    var $window = $(window).on('resize', function(){
 	       var height = $(window).height() - 70;

@@ -1,0 +1,32 @@
+// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.masthead.contact {
+	background-color: #000;
+}
+.masthead.contact p,
+.masthead.contact h2{
+	color: #fff;
+	padding: 17% 40px 40px 40px;
+	font-family: $defaultFont, sans-serif;
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.button {
+	background-color: $kleinBlue;
+	padding: 15px 20px;
+	margin: 0 40px 0 40px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 2px;
+	border: solid 1px $kleinBlue;
+	transition: .5s;
+}
+.button:hover,
+.button:focus {
+	border: solid 1px #fff;
+	background-color: transparent;
+	color: #fff;
+}
