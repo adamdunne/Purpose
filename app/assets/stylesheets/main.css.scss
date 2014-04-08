@@ -221,7 +221,10 @@ nav#main-nav li a {
 	padding: 12px 0 21px 0;
 	height: 24px;
 	border-bottom: solid 5px transparent;
+    transition: border 0.2s ease-out 0s;
+    outline: none !important;
 }
+
 nav#main-nav li a:hover,
 nav#main-nav li a.selected {
 	border-bottom-color: #000;
